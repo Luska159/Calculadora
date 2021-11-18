@@ -10,8 +10,20 @@
 }
 
 body {
-    background-image: linear-gradient(90deg, black, rgb(84, 173, 84));
+    background-image: linear-gradient(45deg, #11052C, #3D087B, #F43B86, #FFE459);
+    background-size: 200% 200%;
+    animation: colors 16s alternate;
     height: 100vh;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    } 50% {
+        background-position: 100% 50%;
+    } 100% {
+        background-position: 0% 50%;
+    }
 }
 
 .titulo {
@@ -61,10 +73,11 @@ body {
     width: 90%;
     height: 5vh;
     margin: 5px;
-    border: 8px solid rgba(44, 63, 170, 0.692);
+    border: 8px dashed #FFE459;
     border-radius: 6px;
 }
 
 button:hover {
-    background-color: tomato;
+    background-color: rgb(173, 172, 172);
+    opacity: .5;
 }
